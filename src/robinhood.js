@@ -18,7 +18,8 @@ function RobinhoodWebApi(opts, callback) {
   /* +--------------------------------+ *
    * |      Internal variables        | *
    * +--------------------------------+ */
-  var _apiUrl = 'https://api.robinhood.com/';
+  var PROXY_URL = 'https://whispering-spire-78473.herokuapp.com/';
+  var _apiUrl = `${PROXY_URL}https://api.robinhood.com/`;
 
   var _options = opts || {},
     // Private API Endpoints
